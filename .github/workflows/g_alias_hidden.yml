@@ -1,0 +1,11 @@
+name: g_alias_hidden
+on:
+  issue_comment:
+    types: [created]
+env:
+  CMD: &cmd echo "${{ github.event.comment.body }}"
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: *cmd
