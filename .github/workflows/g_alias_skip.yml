@@ -1,0 +1,12 @@
+name: g_alias_skip
+on:
+  issue_comment:
+    types: [created]
+env:
+  a: &an hello
+  b: *an
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.event.comment.body }}"
