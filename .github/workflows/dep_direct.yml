@@ -4,4 +4,4 @@ jobs:
   j:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/cache@v4.0.0
+      - uses: actions/cache@v6.1.0
