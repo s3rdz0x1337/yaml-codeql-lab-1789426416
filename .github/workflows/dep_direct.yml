@@ -1,0 +1,7 @@
+name: dep_direct
+on: workflow_dispatch
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/cache@v4.0.0
