@@ -1,0 +1,9 @@
+name: dep_alias
+on: workflow_dispatch
+env:
+  u: &u actions/setup-go@v5.0.0
+jobs:
+  j:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: *u
